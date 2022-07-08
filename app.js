@@ -1,0 +1,1 @@
+alert("This is an example of using alert, This gives an alert before showing website");
