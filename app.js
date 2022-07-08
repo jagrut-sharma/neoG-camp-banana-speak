@@ -1,1 +1,2 @@
-alert("This is an example of using alert, This gives an alert before showing website");
+var userName = prompt("This is prompt and its also used for an input, Now enter your name!");
+console.log(userName);
