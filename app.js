@@ -1,3 +1,7 @@
 let translateBtn = document.querySelector(".btn");
 
-translateBtn.addEventListener("click", () => console.log("CLicked!"));
+function sayThanks() {
+    console.log("Thanks");
+}
+
+translateBtn.addEventListener("click", sayThanks);
