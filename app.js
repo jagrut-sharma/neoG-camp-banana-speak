@@ -1,2 +1,7 @@
-var userName = prompt("This is prompt and its also used for an input, Now enter your name!");
-console.log(userName);
+var translateBtn = document.querySelector(".button");
+
+translateBtn.addEventListener('click', clickHandler);
+
+function clickHandler(){
+    console.log('button pressed');
+}
