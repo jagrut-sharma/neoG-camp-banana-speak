@@ -1,9 +1,12 @@
-let translateBtn = document.querySelector(".btn-translate");
-let input = document.querySelector(".input-txtarea");
-let outputDiv = document.querySelector(".output");
+const translateBtn = document.querySelector(".btn-translate");
+const input = document.querySelector(".txtarea");
+const outputDiv = document.querySelector(".output");
 
 translateBtn.addEventListener("click", clickHandler);
 
+let urlAPI = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+
 function clickHandler(){
-    outputDiv.innerText = input.value + " auhdsidhijashdi";
+    let urlFetch = urlAPI + "?text=" + encodeURIComponent(input.value);
+    console.log(urlFetch);
 }
