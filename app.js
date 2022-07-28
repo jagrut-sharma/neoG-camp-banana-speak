@@ -14,15 +14,16 @@ function clickHandler(){
     fetch(urlFetch)
     .then(response => response.json())
     .then(json => {
-        translatedtxt = json.contents.translated
-        outputDiv.innerText = translatedtxt})
+        translatedtxt = json.contents.translated;
+        outputDiv.innerText = translatedtxt;})
     .catch(errorHandler);
 }
 
 function errorHandler(error){
+    
     if (translatedtxt == undefined)
     {
-        outputDiv.innerText = "Hourly limit(5 per hour) reached. Please try after an hour. Thanks";
+        outputDiv.innerText = "Hourly limit(5 per hour) reached. Please try after an hour. Thanks!";
         console.log(error);
     }
     else
