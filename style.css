@@ -1,12 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@400;600;700&display=swap');
 
+:root{
+    --primary-color: #fde047;
+}
+
 body{
     font-family: 'Mali', cursive;
+    margin: 0;
 }
 
 * {
     box-sizing: border-box;
 }
+
+.navigation{
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.navigation .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation .image img{
+    width: 70px;
+    height: 70px;
+}
+
 .btn-translate{
     cursor: pointer;
     display: block;
@@ -14,9 +36,10 @@ body{
 }
 
 .title{
-    margin: 1rem auto;
+    margin: 0 auto;
     width: max-content;
     font-size: 2rem;
+    padding: 1rem;
 }
 
 .txtarea{
