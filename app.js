@@ -14,22 +14,26 @@ function clickHandler(){
     fetch(urlFetch)
     .then(response => response.json())
     .then(json => {
-        translatedtxt = json.contents.translated;
-        outputDiv.innerText = translatedtxt;})
+        translatedtxt = json;
+        outputDiv.innerText = translatedtxt.contents.translated;
+    })
     .catch(errorHandler);
 }
 
 function errorHandler(error){
     
-    if (translatedtxt == undefined)
-    {
-        outputDiv.innerText = "Hourly limit(5 per hour) reached. Please try after an hour. Thanks!";
-        console.log(error);
+    if (translatedtxt.error.code == 429){
+        outputDiv.innerText = translatedtxt.error.message
+        console.log(translatedtxt.error.message);
     }
-    else
-    {
-        outputDiv.innerText = 'Error occured: ' + error.message;
+
+    else{
+        outputDiv.innerHTML = error + "<br>" + "<br>" + "Error from server side: " + translatedtxt.error.message + "<br>" + "<br>" + "If you have entered a new line(pressed enter) in input area, please avoid doing that, it will give error.";
+        
+        
         console.log(error);
+        console.log("Error from server side: " + translatedtxt.error.message);
+        console.log("If you have entered a new line(pressed enter) in input area, please avoid doing that, it will give error.");
     }
 
 }
