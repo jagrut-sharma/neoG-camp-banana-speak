@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@400;600;700&display=swap');
 
-:root{
+:root {
     --primary-color: #fde047;
 }
 
-body{
+body {
     font-family: 'Mali', cursive;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     margin: 0;
     height: 100vh;
@@ -16,23 +16,24 @@ body{
     box-sizing: border-box;
 }
 
-.navigation{
+.navigation {
     background-color: var(--primary-color);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.navigation .image{
+.navigation .image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.navigation .image img{
+
+.navigation .image img {
     width: 70px;
     height: 70px;
 }
 
-.btn-translate{
+.btn-translate {
     cursor: pointer;
     display: block;
     margin: 1rem auto;
@@ -44,14 +45,14 @@ body{
     border: 1px solid black;
 }
 
-.title{
+.title {
     margin: 0 auto;
     width: max-content;
     font-size: 2rem;
     padding: 1rem;
 }
 
-.txtarea{
+.txtarea {
     display: block;
     width: 40%;
     height: 20vh;
@@ -64,7 +65,7 @@ body{
 
 }
 
-.output-text{
+.output-text {
     font-size: larger;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -73,23 +74,23 @@ body{
     font-weight: 600;
 }
 
-.output{
+.output {
     border: 1px solid black;
     width: 40%;
     height: 20vh;
     margin: 1rem auto auto;
     padding: 1rem;
-    font-size: 1rem;  
+    font-size: 1rem;
     overflow-y: scroll;
 }
 
-.footer{
+.footer {
     background-color: var(--primary-color);
     margin-top: auto;
     min-height: 100px;
 }
 
-.footer .footer-txt{
+.footer .footer-txt {
     max-width: 50%;
     margin: 0 auto;
     text-align: justify;
