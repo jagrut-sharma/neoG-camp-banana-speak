@@ -108,6 +108,10 @@ body {
         margin-top: 1.5rem;
     }
 
+    .footer .footer-txt{
+        max-width: 80%;
+    }
+
     .txtarea{
         margin-top: 2rem;
     }
