@@ -91,10 +91,28 @@ body {
 }
 
 .footer .footer-txt {
-    max-width: 50%;
+    max-width: 60%;
     margin: 0 auto;
     text-align: justify;
     text-align-last: center;
     font-size: 1.1rem;
     padding: 1rem;
+}
+
+@media screen and (max-width: 500px){
+    body{
+        display: block;
+    }
+
+    .footer{
+        margin-top: 1.5rem;
+    }
+
+    .txtarea{
+        margin-top: 2rem;
+    }
+
+    .title{
+        padding: 0.5rem;
+    }
 }
